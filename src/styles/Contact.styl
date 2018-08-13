@@ -1,0 +1,90 @@
+.information
+    display grid
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.3fr 1.2fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "form-title form-title" "information message";
+    padding 20px 0
+    height calc(100% - 97px)
+    max-width 1420px
+    margin 0 auto
+
+.form-title 
+    grid-area form-title
+
+.contactInformation
+    grid-area information
+    display flex
+    flex-direction column
+    label
+        margin 10px 0
+        font-weight 700
+        color #484848
+    input 
+        max-width 90%
+        line-height 1.5
+        color #494949
+        background-color #fff
+        border 1px solid .25rem
+        border-radius 5px
+        font-weight 400
+
+.message
+    max-width 85%
+    grid-area message
+    // background-color black
+    display flex
+    flex-direction column
+    justify-content space-between
+    label
+        margin 10px 0
+        font-weight 700
+        color #484848
+    textarea
+        flex 1 1 0 
+        width calc(100% - 1.5rem)
+        padding .5rem .75rem
+        line-height 1.5
+        color #494949
+        background-color #fff
+        border 1px solid .25rem
+        border-radius 5px
+        font-weight 400
+        margin-bottom 10px
+    button 
+        letter-spacing: 2px;
+        padding: 9px 30px;
+        font-weight:900;
+        text-transform:uppercase;
+        background:transparent;
+        border:none;
+        border-radius: 100px;
+        -webkit-box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+        -moz-box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+        box-shadow: inset 0px 0px 0px 4px rgba(0,0,0, 0.3);
+        color:rgba(0,0,0, 0.3);
+        transition-timing-function:ease-in-out;
+        transition:0.3s all;
+        transform:scale(1.0) rotateX(0) rotateY(0);
+        transform-style: preserve-3d;
+        will-change: transform box-shadow;
+        &:hover
+            color:#fff;
+            -webkit-box-shadow: inset 0px 0px 0px 20px rgba(black, 1), 0px 10px 35px rgba(0,0,0,0.4);
+            -moz-box-shadow: inset 0px 0px 0px 20px rgba(black, 1), 0px 10px 35px rgba(0,0,0,0.4);
+            box-shadow: inset 0px 0px 0px 20px rgba(black, 1), 0px 10px 35px rgba(0,0,0,0.4);
+
+@media all and (min-width:0px) and (max-width: 898px) 
+    .information
+        padding-left 30px
+        display flex
+        flex-direction column
+    .contactInformation
+        width 100%
+        input 
+            width 79.5%
+    .form-title
+        width 80%
+    .message
+        width 80%
+

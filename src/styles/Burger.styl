@@ -1,0 +1,65 @@
+.bm-item 
+    font-size 30px
+    display inline-block
+    text-decoration none
+    padding: 5px
+    margin-bottom 10px
+    color #d1d1d1
+    transition color 0.2s
+    &:hover
+        color #C22820 
+
+.bm-burger-button 
+    display none
+    position fixed
+    width 36px
+    height 30px
+    left 36px
+    top 36px
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars
+    display none
+    background #373a47
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button 
+    height 24px
+    width 24px
+
+/* Color/shape of close button cross */
+.bm-cross 
+    background #bdc3c7
+
+/* General sidebar styles */
+.bm-menu 
+    background #373a47
+    padding 2.5em 1.5em 0
+    font-size 1.15em
+    position: relative
+    bottom 30px
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape 
+    fill #373a47
+
+/* Wrapper for item list */
+.bm-item-list 
+    color #b8b7ad
+
+/* Styling of overlay */
+.bm-overlay 
+    background rgba(0, 0, 0, 0.3)
+
+@media screen and (max-width: 898px)
+    .bm-burger-button 
+        display block
+    .bm-burger-bars
+        display block
+        background #373a47
+
+.icon
+    position relative
+    top 5px
+    padding-right 10px
+    width 15%

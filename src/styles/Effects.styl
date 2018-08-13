@@ -1,0 +1,39 @@
+light = rgb(141, 218, 253)
+dark = rgb(0,0,0)
+primary = rgb(248, 50, 116)
+
+.wipe-hover
+    background-color black
+    overflow hidden
+    position relative 
+    transition 0.25s all 
+    transition-timing-function: ease-in-out
+    wipe-hover::after 
+        clip-path polygon(0 0, 95% 0, 100% 100%, 5% 100%)
+        transition all 0.25s linear
+        content ""
+        position absolute
+        width 400%
+        top 0
+        bottom 0
+        z-index 2
+        background-color light
+        transform translateX(-130%)
+    &:hover 
+        text-decoration: none;
+    &::after 
+        transform: translateX(30%);
+
+.highlight
+    font-weight 600
+    position relative
+    z-index 10
+    &::after
+        content ""
+        position absolute
+        height 16px
+        left 0
+        right 0
+        bottom 0
+        z-index -1
+        background-color primary

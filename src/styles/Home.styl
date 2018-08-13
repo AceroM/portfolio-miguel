@@ -1,0 +1,36 @@
+base = #e6d95d
+bg-blend = darken
+blur = 0px
+fg-blend = lighten
+foreground = #16006f
+opacity = 1
+spacing = 20px
+
+.img-wrapper 
+    &::before
+        background-color foreground
+        bottom 10 
+        content ''
+        mix-blend-mode: fg-blend
+        position absolute
+        right 0 
+        top 0
+        z-index 1
+    background-color base
+    display flex
+    flex 1 1 100%
+    height 100%;
+    overflow hidden
+    padding spacing
+    position relative
+
+
+#miguel 
+    filter grayscale(100%)
+    flex 1 0 100%
+    mix-blend-mode darken
+    object-fit: cover
+    opacity opacity
+    position relative 
+    &:hover
+        filter grayscale(0%)

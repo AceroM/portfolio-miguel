@@ -1,0 +1,51 @@
+.pp
+    padding-left 15px
+    font-weight 700
+    position relative
+    z-index 10
+    &:after
+        content: "";
+        max-width 300px
+        position: absolute;
+        height: 16px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: #FCD908;
+
+.tags
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
+    span 
+        display block
+        color #262d32
+        font-size 13.5px
+        border-radius .25rem
+        padding .38rem .8rem
+        margin 5px 5px 5px 0
+        background-color #efefef
+
+.projectContainer
+    margin 20px
+    display flex
+    flex-direction row
+    justify-content flex-start
+    .card
+        flex: 1 1 auto
+        text-align center
+        margin: 10px
+
+@media screen and (max-width: 600px)
+    .projectContainer
+        margin 20px
+        display flex
+        flex-wrap wrap
+        flex-direction column
+        .card
+            max-width: 500
+            flex: 1 1 auto
+            flex-direction column
+            text-align center
+            margin: 10px

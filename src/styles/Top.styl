@@ -1,0 +1,65 @@
+@import 'Effects.styl'
+
+base = #FAD28A
+bg-blend = multiply
+fg-blend = lighten
+foreground = #3a1252
+opacity = 1
+spacing = 27px
+.top
+    background: #F2C14E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(60deg, #F2C14E, #F78154); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(60deg, #F2C14E, #F78154); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(60deg, #F2C14E, #F78154); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(60deg, #F2C14E, #F78154); /* Standard syntax */
+    height 700px
+    height 100vh
+    position relative
+    bottom:22px
+    margin 0 auto
+
+.description
+    padding 30vh 0 0 15vh
+    display flex
+    flex-direction column
+    justify-content space-around
+    position relative
+    max-width 600px
+    #title
+        float left
+        font-family: Montserrat,Helvetica Neue,sans-serif;
+        display inline
+        padding-left 10vh
+        font-weight 500
+        font-size 2rem
+        word-wrap break-word
+        #name 
+            font-weight 700
+            position relative
+            z-index 10
+            &:after
+                content: "";
+                position: absolute;
+                height: 16px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                background-color: #FCD908;
+
+#liketo 
+    p 
+        margin 0 10px 0 0
+        padding 0 
+        display inline-block
+    font-family: Montserrat,Helvetica Neue,sans-serif;
+    display inline
+    padding-left 10vh
+    font-weight 500
+    font-size 2rem
+
+@media screen and (max-width: 898px)
+    .description
+        padding 10% 6% 0 6% 
+    #liketo
+        padding 0 0 0 0
